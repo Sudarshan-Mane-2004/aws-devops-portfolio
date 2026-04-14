@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+    font-family: Inter, 'SF Pro Display', system-ui, sans-serif;
+    background-image: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.25), transparent 40%);
+  }
+
+  body.light {
+    @apply bg-slate-100 text-slate-900;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/15 bg-white/10 backdrop-blur-xl;
+  }
+
+  .light .glass {
+    @apply border-slate-300 bg-white/70;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight text-white md:text-4xl;
+  }
+
+  .light .section-title {
+    @apply text-slate-900;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 999px;
+}

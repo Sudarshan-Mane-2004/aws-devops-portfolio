@@ -313,7 +313,7 @@ export default function App() {
         <h2 className="section-title">Experience</h2>
         <div className="mt-8 border-l border-cyan-300/40 pl-6">
           <Card>
-            <p className="text-cyan-300">Cravita Tech</p>
+            <p className="text-cyan-300">Cravita Technology India Private Limited</p>
             <h3 className="mt-1 text-xl">AWS & DevOps Intern</h3>
             <ul className="mt-4 space-y-2 text-slate-300">
               <li>- CI/CD pipelines with Jenkins and GitHub Actions</li>
